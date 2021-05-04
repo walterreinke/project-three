@@ -31,22 +31,75 @@ html {
   background: black;
   padding: 10px;
   width: 85%;
-  margin: 16px auto;
+  margin: 0px auto;
+}
+
+.first-node {
+  margin-top: 16px;
 }
 
 .big-space {
   margin-top: 400px;
 }
 
+.first-player-header {
+  padding-top: 20px;
+}
+
 .player-header {
   padding-top: 20px;
+  margin-top: 0px;
 }
 
 .blue {
   background-color: #056bb7;
+  height: 100%;
 }
 
 .player-image {
   height: 275px;
   width: 100%;
+  position: absolute;
+  bottom: 0;
 }
+
+.div-wrapper {
+  position: relative;
+}
+
+.maroon {
+  background-color: #701f39;
+  height: 100%;
+}
+
+.heat-red {
+  background-color: #8f001b;
+  height: 100%;
+}
+
+/* css for the intersection */
+body {
+  transition: background-color 1s;
+}
+section {
+  transition: background-color 1s;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 300ms;
+  height: 100%;
+}
+section.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* img {
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 300ms;
+}
+
+img.active {
+  opacity: 1;
+  transform: scale(1);
+} */

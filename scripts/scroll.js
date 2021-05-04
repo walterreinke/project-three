@@ -9,8 +9,8 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (
-    document.body.scrollTop > 500 ||
-    document.documentElement.scrollTop > 500
+    document.body.scrollTop > 600 ||
+    document.documentElement.scrollTop > 600
   ) {
     mybutton.style.display = "block";
   } else {
@@ -18,22 +18,15 @@ function scrollFunction() {
   }
 }
 
-function topFunction() {
-  var element = document.getElementById("luka");
-  element.scrollIntoView(true);
+function next() {
+  // get the slide with the active class
+  //   document.querySelector(".active").nextSibling.scrollIntoView(true);
+
+  var element = document.querySelector(".active").nextSibling;
+  element.scrollIntoView();
 }
 
-// When the user clicks on the button, scroll to the top of the document
-// function topFunction() {
-//   document.body.scrollTop = 0; // For Safari
-//   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-// }
-
-// function topFunction() {
-//   window.scrollBy(0, 812);
-// }
-
-// var myElement = document.getElementById("luka");
-// var topPos = myElement.offsetTop;
-
-// document.getElementById("section1").scrolltop = topPos;
+function previous() {
+  // get the slide with the active class
+  document.querySelector(".active").previousSibling.scrollIntoView(true);
+}

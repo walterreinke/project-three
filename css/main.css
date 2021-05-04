@@ -5,6 +5,7 @@ html {
   font-family: "Open Sans", sans-serif;
 }
 
+/* turns off the video on mobile and adds a picture instead */
 @media (max-width: 767px) {
   .video-bg {
     display: none;
@@ -17,6 +18,7 @@ html {
     height: 100%;
   }
 }
+
 .white {
   color: white;
 }
@@ -226,6 +228,46 @@ a {
   font-weight: bold;
 }
 
+/* hover effect for images */
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #008cba;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 /* desktop styles */
 @media (min-width: 767px) {
   /* video background */
@@ -279,6 +321,7 @@ a {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
+    align-self: center;
   }
 
   .avatar {
@@ -289,5 +332,13 @@ a {
     border: solid 5px white;
     object-fit: cover;
     justify-content: center;
+  }
+
+  .item2 {
+    margin-top: 0;
+  }
+
+  .item3 {
+    margin-top: 0;
   }
 }

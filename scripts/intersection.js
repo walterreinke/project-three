@@ -1,7 +1,7 @@
 // this is say that once 25% of the section enters the screen, the effect will take place
 let options = {
   root: null,
-  threshold: 0.15,
+  threshold: 0.3,
 };
 
 function intersectionHandler(entries, observer) {

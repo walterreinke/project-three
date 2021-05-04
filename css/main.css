@@ -35,7 +35,10 @@ html {
 }
 
 .first-node {
-  margin-top: 16px;
+  margin-top: 0;
+  padding-top: 30px;
+  width: 85%;
+  margin: 0px auto;
 }
 
 .big-space {
@@ -51,11 +54,6 @@ html {
   margin-top: 0px;
 }
 
-.blue {
-  background-color: #056bb7;
-  height: 100%;
-}
-
 .player-image {
   height: 275px;
   width: 100%;
@@ -67,6 +65,12 @@ html {
   position: relative;
 }
 
+/* team colors */
+.blue {
+  background-color: #056bb7;
+  height: 100%;
+}
+
 .maroon {
   background-color: #701f39;
   height: 100%;
@@ -75,6 +79,29 @@ html {
 .heat-red {
   background-color: #8f001b;
   height: 100%;
+}
+
+.philly-red {
+  background-color: #ee1815;
+  height: 100%;
+}
+
+.chicago-red {
+  background-color: #cf0540;
+  height: 100%;
+}
+
+.purple {
+  background-color: #532387;
+  height: 100%;
+}
+
+.green {
+  background-color: #008447;
+  height: 100%;
+}
+p {
+  margin: 10px;
 }
 
 /* css for the intersection */

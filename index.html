@@ -17,12 +17,12 @@
     <script src="./scripts/intersection.js" defer></script>
     <script src="./scripts/dropdown.js" defer></script>
     <script src="./scripts/scroll.js" defer></script>
-    <!-- <script src="./scripts/fetch.js" defer></script> -->
+    <script src="./scripts/fetch.js" defer></script>
     <title>The Best NBA Playoff Performances of All Time</title>
   </head>
 
   <body>
-    <!-- scroll to top button -->
+    <!-- navigation buttons -->
     <i
       class="fa fas fa-chevron-up fa-lg"
       onclick="topFunction()"
@@ -69,8 +69,9 @@
     </section>
 
     <!-- this is the first player slide -->
+    <div id="luka"></div>
     <section data-color="#056bb7" class="blue slide">
-      <div id="luka">
+      <div>
         <h1 class="player-header white centered">
           Luka Doncic's Historic Game Winner
         </h1>
@@ -80,14 +81,7 @@
             src="./images/luka-doncic.png"
             alt="Luka Doncic"
           />
-          <ul class="wrapper stats item2">
-            <li>Points: 43</li>
-            <li>Assists: 13</li>
-            <li>Rebounds: 17</li>
-            <li>Blocks: 1</li>
-            <li>Steals: 2</li>
-            <li>FG%: 18/31</li>
-          </ul>
+          <div class="wrapper stats item2" id="doncic"></div>
           <p class="white item3">
             Doncic's performance in Game 4 of the Western First Round in 2020
             broke so many records that it's impossible to list them all here, so
@@ -119,14 +113,7 @@
             src="./images/lebron-james-1.png"
             alt="LeBron James"
           />
-          <ul class="wrapper stats item2">
-            <li>Points: 27</li>
-            <li>Assists: 11</li>
-            <li>Rebounds: 11</li>
-            <li>Blocks: 3</li>
-            <li>Steals: 2</li>
-            <li>FG%: 9/24</li>
-          </ul>
+          <div class="wrapper stats item2" id="james1"></div>
           <p class="white item3">
             James'
             <a
@@ -158,14 +145,7 @@
             src="./images/lebron-james-2.png"
             alt="LeBron James"
           />
-          <ul class="wrapper stats item2">
-            <li>Points: 45</li>
-            <li>Assists: 5</li>
-            <li>Rebounds: 15</li>
-            <li>Blocks: 0</li>
-            <li>Steals: 0</li>
-            <li>FG%: 19/26</li>
-          </ul>
+          <div class="wrapper stats item2" id="james2"></div>
           <p class="white item3">
             In 2012, the Heat were facing elimination at the hands of the Boston
             Celtics, one of James' long time rivals, in Game 6 of the Eastern
@@ -192,14 +172,7 @@
             src="./images/lebron-james-1.png"
             alt="LeBron James"
           />
-          <ul class="wrapper stats item2">
-            <li>Points: 48</li>
-            <li>Assists: 7</li>
-            <li>Rebounds: 9</li>
-            <li>Blocks: 0</li>
-            <li>Steals: 2</li>
-            <li>FG%: 18/33</li>
-          </ul>
+          <div class="wrapper stats item2" id="james3"></div>
           <p class="white item3">
             In 2007, at age 22, LeBron James led the Cavs to the Eastern
             Conference Finals against the Detroit Pistons, who were in their
@@ -225,14 +198,7 @@
             src="./images/allen-iverson.png"
             alt="Allen Iverson"
           />
-          <ul class="wrapper stats item2">
-            <li>Points: 48</li>
-            <li>Assists: 6</li>
-            <li>Rebounds: 5</li>
-            <li>Blocks: 0</li>
-            <li>Steals: 5</li>
-            <li>FG%: 18/41</li>
-          </ul>
+          <div class="wrapper stats item2" id="iverson"></div>
           <p class="white item3">
             When reigning MVP AI and the ragtag Sixers went up against the
             powerhouse Lakers in the 2001 Finals, everybody thought that it
@@ -264,14 +230,7 @@
             src="./images/michael-jordan.png"
             alt="Michael Jordan"
           />
-          <ul class="wrapper stats item2">
-            <li>Points: 45</li>
-            <li>Assists: 1</li>
-            <li>Rebounds: 1</li>
-            <li>Blocks: 0</li>
-            <li>Steals: 4</li>
-            <li>FG%: 15/35</li>
-          </ul>
+          <div class="wrapper stats item2" id="jordan1"></div>
           <p class="white item3">
             1998 was the culmination of the second three-peat for Jordan and the
             Bulls, and they had to face a tough Utah Jazz team in the Finals.
@@ -302,14 +261,7 @@
             src="./images/michael-jordan.png"
             alt="Michael Jordan"
           />
-          <ul class="wrapper stats item2">
-            <li>Points: 38</li>
-            <li>Assists: 5</li>
-            <li>Rebounds: 7</li>
-            <li>Blocks: 1</li>
-            <li>Steals: 3</li>
-            <li>FG%: 13/27</li>
-          </ul>
+          <div class="wrapper stats item2" id="jordan2"></div>
           <p class="white item3">
             A performance so iconic that it needs no other introduction. In
             1997, Jordan’s Bulls took on John Stockon, Karl Malone, and the Utah
@@ -336,14 +288,7 @@
             src="./images/michael-jordan.png"
             alt="Michael Jordan"
           />
-          <ul class="wrapper stats item2">
-            <li>Points: 63</li>
-            <li>Assists: 6</li>
-            <li>Rebounds: 5</li>
-            <li>Blocks: 2</li>
-            <li>Steals: 3</li>
-            <li>FG%: 22/41</li>
-          </ul>
+          <div class="wrapper stats item2" id="jordan3"></div>
           <p class="white item3">
             In his early years, Jordan faced some tough teams in the Eastern
             Conference. One such team was the 1986 Boston Celtics, featuring
@@ -370,14 +315,7 @@
             src="./images/magic-johnson.png"
             alt="Magic Johnson"
           />
-          <ul class="wrapper stats item2">
-            <li>Points: 42</li>
-            <li>Assists: 7</li>
-            <li>Rebounds: 15</li>
-            <li>Blocks: 1</li>
-            <li>Steals: 3</li>
-            <li>FG%: 14/23</li>
-          </ul>
+          <div class="wrapper stats item2" id="johnson"></div>
           <p class="white item3">
             In 1980, rookie Magic Johnson, Kareem Abdul-Jabbar, and the Lakers
             were in the midst of taking on the Philadelphia 76ers in the Finals.
@@ -387,39 +325,6 @@
             seventh title in franchise history. Johnson’s performance earned him
             Finals MVP, making him the only rookie in NBA history to recieve the
             award.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- tenth player slide -->
-    <section data-color="#008447" class="green">
-      <div>
-        <h1 class="player-header white centered">
-          Bill Russell Stuffs the Stat Sheet
-        </h1>
-        <div class="desktop-wrapper">
-          <img
-            class="avatar image-center item1"
-            src="./images/bill-russell.png"
-            alt="Bill Russell"
-          />
-          <ul class="wrapper stats item2">
-            <li>Points: 30</li>
-            <li>Assists: 4</li>
-            <li>Rebounds: 40</li>
-            <li>Blocks: N/A</li>
-            <li>Steals: N/A</li>
-            <li>FG%: 8/18</li>
-          </ul>
-          <p class="white item3">
-            Bill Russell, who won an NBA record 11 championships with the Boston
-            Celtics, is responsible for some of the most eye-popping
-            performances in NBA playoff history. His most dazzling performance
-            was in Game 7 of the 1962 NBA Finals, where his Celtics took on the
-            Lakers. He played every minute of the game, including overtime, and
-            finished with 30 points and 40 rebounds. Russell’s performance
-            clinched Boston’s fourth straight championship.
           </p>
         </div>
       </div>

@@ -11,33 +11,49 @@
       rel="stylesheet"
     />
     <script src="./scripts/intersection.js" defer></script>
+    <script src="./scripts/dropdown.js" defer></script>
     <!-- <script src="./scripts/fetch.js" defer></script> -->
     <title>The Best NBA Playoff Performances of All Time</title>
   </head>
   <body>
-    <video
-      class="video-bg"
-      src="./images/jordan-shrug.mp4"
-      autoplay
-      muted
-      loop
-    ></video>
-    <section data-color="white" class="bg-img">
-      <div class="white centered playerslide">
+    <section data-color="#424242" class="bg-img">
+      <video
+        class="video-bg"
+        src="./images/jordan-shrug.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <div class="white centered">
         <h1 class="first-node">
           The Best NBA Playoff Performances of All Time
         </h1>
+        <div class="dropdown">
+          <button onclick="dropdown()" class="dropbtn">Sources</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a
+              href="https://ca.nba.com/news/nba-playoffs-10-greatest-single-game-individual-postseason-performances-in-nba-history/45jmayb4cqst1mkfvzxbl6jai"
+              target="_blank"
+              >List of performances</a
+            >
+            <a href="https://www.statmuse.com/players" target="_blank"
+              >Player Images</a
+            >
+            <a href="https://www.basketball-reference.com/" target="_blank"
+              >Player Stats</a
+            >
+          </div>
+        </div>
         <p class="boxed big-space">
           The NBA playoffs is where the best players truly shine. Legends are
           made in the postseason. Throughout the history of the NBA, some of the
           best players to ever step on the court have had all-time great
           individual performances in the playoffs. In this list, you will find
-          10 of the best individual performances in NBA playoff history, from
-          most recent to oldest.
+          10 of the best individual performances in NBA playoff history.
         </p>
-        <button class="margin-auto">Sources</button>
       </div>
     </section>
+
     <!-- this is the first player slide -->
     <section data-color="#056bb7" class="blue">
       <div>
@@ -49,7 +65,7 @@
           src="./images/luka-doncic.png"
           alt="Luka Doncic"
         />
-        <ul class="wrapper">
+        <ul class="wrapper stats">
           <li>Points: 43</li>
           <li>Assists: 13</li>
           <li>Rebounds: 17</li>
@@ -60,11 +76,17 @@
         <p class="white">
           Doncic's performance in Game 4 of the Western First Round in 2020
           broke so many records that it's impossible to list them all here, so
-          you can find them here instead. His OT buzzer beater against the
-          Clippers capped off a 21 point comeback for the Mavs, the largest in
-          franchise postseason history. His monster triple-double made him only
-          the ninth player to ever record consecutive triples doubles in the
-          playoffs, and only the third at the age of 21 or younger.
+          you can find them
+          <a
+            href="https://twitter.com/MavsPR/status/1297896509695037441?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1297896639361961985%7Ctwgr%5E%7Ctwcon%5Es2_&ref_url=https%3A%2F%2Fca.nba.com%2Fnews%2Fnba-playoffs-10-greatest-single-game-individual-postseason-performances-in-nba-history%2F45jmayb4cqst1mkfvzxbl6jai"
+            target="_blank"
+            >here</a
+          >
+          instead. His OT buzzer beater against the Clippers capped off a 21
+          point comeback for the Mavs, the largest in franchise postseason
+          history. His monster triple-double made him only the ninth player to
+          ever record consecutive triples doubles in the playoffs, and only the
+          third at the age of 21 or younger.
         </p>
       </div>
     </section>
@@ -80,7 +102,7 @@
           src="./images/lebron-james-1.png"
           alt="LeBron James"
         />
-        <ul class="wrapper">
+        <ul class="wrapper stats">
           <li>Points: 27</li>
           <li>Assists: 11</li>
           <li>Rebounds: 11</li>
@@ -89,13 +111,17 @@
           <li>FG%: 9/24</li>
         </ul>
         <p class="white">
-          James' chasedown block of Andre Igoudala in the closing minutes of
-          Game 7 of the 2016 NBA Finals is one of the most iconic moments in NBA
-          history. The moment capped off the Cavs comeback from down 3-1 against
-          the 73-9 Warriors, which made them the only team to ever come back
-          from a 3-1 deficit in the Finals. James' triple-double in Game 7 also
-          capped off a series of huge performances, and allowed him to finally
-          bring a title to Cleveland.
+          James'
+          <a href="https://www.youtube.com/watch?v=-zd62MxKXp8" target="_blank"
+            >chasedown block</a
+          >
+          of Andre Igoudala in the closing minutes of Game 7 of the 2016 NBA
+          Finals is one of the most iconic moments in NBA history. The moment
+          capped off the Cavs comeback from down 3-1 against the 73-9 Warriors,
+          which made them the only team to ever come back from a 3-1 deficit in
+          the Finals. James' triple-double in Game 7 also capped off a series of
+          huge performances, and allowed him to finally bring a title to
+          Cleveland.
         </p>
       </div>
     </section>
@@ -111,7 +137,7 @@
           src="./images/lebron-james-2.png"
           alt="LeBron James"
         />
-        <ul class="wrapper">
+        <ul class="wrapper stats">
           <li>Points: 45</li>
           <li>Assists: 5</li>
           <li>Rebounds: 15</li>
@@ -143,7 +169,7 @@
           src="./images/lebron-james-1.png"
           alt="LeBron James"
         />
-        <ul class="wrapper">
+        <ul class="wrapper stats">
           <li>Points: 48</li>
           <li>Assists: 7</li>
           <li>Rebounds: 9</li>
@@ -174,7 +200,7 @@
           src="./images/allen-iverson.png"
           alt="Allen Iverson"
         />
-        <ul class="wrapper">
+        <ul class="wrapper stats">
           <li>Points: 48</li>
           <li>Assists: 6</li>
           <li>Rebounds: 5</li>
@@ -186,11 +212,14 @@
           When reigning MVP AI and the ragtag Sixers went up against the
           powerhouse Lakers in the 2001 Finals, everybody thought that it would
           be a fast and easy sweep for the Lakers. That is, everybody not named
-          Allen Iverson. The Lakers would have ended with a perfect record in
-          the postseason if not for AI’s monster performance in Game 1 of the
+          Allen Iverson. The Lakers would have ended the postseason with a
+          perfect record if not for AI’s monster performance in Game 1 of the
           Finals, where he played all but three seconds of the overtime victory.
-          This upset also produced one of the most iconic moments in NBA history
-          (link).
+          This upset also produced one of the most
+          <a href="https://www.youtube.com/watch?v=NAZvvaT79g8" target="_blank"
+            >iconic moments</a
+          >
+          in NBA history.
         </p>
       </div>
     </section>
@@ -206,7 +235,7 @@
           src="./images/michael-jordan.png"
           alt="Michael Jordan"
         />
-        <ul class="wrapper">
+        <ul class="wrapper stats">
           <li>Points: 45</li>
           <li>Assists: 1</li>
           <li>Rebounds: 1</li>
@@ -220,9 +249,13 @@
           Scottie Pippen, Jordan’s all-time great sidekick, barely able to move
           due to an injury, Jordan made sure that the Bulls finished out their
           second three-peat with a 45 point performance in Game 6, including the
-          iconic game winning shot (link) over Byron Russel. Whild Jordan would
-          play again for the Washington Wizards in the early 2000s, this shot
-          was the culmination of an era of basketball dominated by MJ.
+          iconic
+          <a href="https://www.youtube.com/watch?v=vdPQ3QxDZ1s" target="_blank"
+            >game winning shot</a
+          >
+          over Byron Russel. While Jordan would play again for the Washington
+          Wizards in the early 2000s, this shot was the culmination of an era of
+          basketball dominated by MJ.
         </p>
       </div>
     </section>
@@ -236,7 +269,7 @@
           src="./images/michael-jordan.png"
           alt="Michael Jordan"
         />
-        <ul class="wrapper">
+        <ul class="wrapper stats">
           <li>Points: 38</li>
           <li>Assists: 5</li>
           <li>Rebounds: 7</li>
@@ -269,7 +302,7 @@
           src="./images/michael-jordan.png"
           alt="Michael Jordan"
         />
-        <ul class="wrapper">
+        <ul class="wrapper stats">
           <li>Points: 63</li>
           <li>Assists: 6</li>
           <li>Rebounds: 5</li>
@@ -301,7 +334,7 @@
           src="./images/magic-johnson.png"
           alt="Magic Johnson"
         />
-        <ul class="wrapper">
+        <ul class="wrapper stats">
           <li>Points: 42</li>
           <li>Assists: 7</li>
           <li>Rebounds: 15</li>
@@ -316,7 +349,7 @@
           the game at center but played every position throughout the game and
           led the Lakers to a 123-107 victory, winning them their seventh title
           in franchise history. Johnson’s performance earned him Finals MVP,
-          making him the only rookie in NBA history to earn such an honor.
+          making him the only rookie in NBA history to recieve the award.
         </p>
       </div>
     </section>
@@ -332,7 +365,7 @@
           src="./images/bill-russell.png"
           alt="Bill Russell"
         />
-        <ul class="wrapper">
+        <ul class="wrapper stats">
           <li>Points: 30</li>
           <li>Assists: 4</li>
           <li>Rebounds: 40</li>
@@ -342,8 +375,8 @@
         </ul>
         <p class="white">
           Bill Russell, who won an NBA record 11 championships with the Boston
-          Celtics, responsible for some of the most eye-popping performances in
-          NBA playoff history. His most dazzling performance was in Game 7 of
+          Celtics, is responsible for some of the most eye-popping performances
+          in NBA playoff history. His most dazzling performance was in Game 7 of
           the 1962 NBA Finals, where his Celtics took on the Lakers. He played
           every minute of the game, including overtime, and finished with 30
           points and 40 rebounds. Russell’s performance clinched Boston’s fourth

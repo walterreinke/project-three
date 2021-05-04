@@ -5,22 +5,18 @@ html {
   font-family: "Open Sans", sans-serif;
 }
 
-/* .bg-img {
-  background: url("https://a.espncdn.com/photo/2017/0519/r210878_600x600_1-1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-} */
-
-/* video background */
-.video-bg {
-  position: fixed;
-  z-index: -1;
-  width: 100%;
-  height: auto;
+@media (max-width: 767px) {
+  .video-bg {
+    display: none;
+  }
+  .bg-img {
+    background: url("../../images/jordan-bg.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+  }
 }
-
 .white {
   color: white;
 }
@@ -46,14 +42,71 @@ html {
 
 .first-node {
   margin-top: 0;
-  padding-top: 30px;
+  padding-top: 25px;
   width: 85%;
   margin: 0px auto;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .big-space {
-  margin-top: 400px;
+  margin-top: 350px;
 }
+
+/* styles for the sources menu, taken from w3schools at https://www.w3schools.com/howto/howto_js_dropdown.asp */
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: white;
+  color: black;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: block;
+  float: left;
+  margin-top: 100px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+/* end */
 
 .first-player-header {
   padding-top: 20px;
@@ -137,7 +190,8 @@ p {
   margin-top: 10px;
 }
 
-ul {
+/* these are the styles for the stats uls */
+.stats {
   list-style: none;
   color: black;
   font-weight: bold;
@@ -164,4 +218,21 @@ section {
 section.active {
   opacity: 1;
   transform: scale(1);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* desktop styles */
+@media (min-width: 767px) {
+  /* video background */
+  .video-bg {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+  }
 }

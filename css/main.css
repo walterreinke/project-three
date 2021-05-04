@@ -2,13 +2,23 @@ body,
 html {
   margin: 0;
   height: 100%;
+  font-family: "Open Sans", sans-serif;
 }
 
-.bg-img {
-  background: url(http://37.media.tumblr.com/65b77a1f6197c0a3fa7f71a49290643a/tumblr_n1si1er4xg1tpuosoo1_500.jpg);
+/* .bg-img {
+  background: url("https://a.espncdn.com/photo/2017/0519/r210878_600x600_1-1.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
+} */
+
+/* video background */
+.video-bg {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: auto;
 }
 
 .white {
@@ -51,9 +61,12 @@ html {
 
 .player-header {
   padding-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   margin-top: 0px;
 }
 
+/* these lines of code set the size of the player image and position it at the bottom of the page */
 .player-image {
   height: 275px;
   width: 100%;
@@ -63,6 +76,22 @@ html {
 
 .div-wrapper {
   position: relative;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 275px;
+  height: 275px;
+  border-radius: 50%;
+  border: solid 5px white;
+  object-fit: cover;
+}
+
+.image-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 275px;
 }
 
 /* team colors */
@@ -100,8 +129,25 @@ html {
   background-color: #008447;
   height: 100%;
 }
+
+/* other desktop styles */
 p {
-  margin: 10px;
+  margin: 20px;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+ul {
+  list-style: none;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 /* css for the intersection */
@@ -112,21 +158,10 @@ section {
   transition: background-color 1s;
   opacity: 0;
   transform: scale(0.5);
-  transition: all 300ms;
+  transition: all 500ms;
   height: 100%;
 }
 section.active {
   opacity: 1;
   transform: scale(1);
 }
-
-/* img {
-  opacity: 0;
-  transform: scale(0.5);
-  transition: all 300ms;
-}
-
-img.active {
-  opacity: 1;
-  transform: scale(1);
-} */
